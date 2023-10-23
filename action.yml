@@ -1,0 +1,19 @@
+name: 'Create GCP Project'
+description: 'Create a new Google Cloud Project using GitHub Actions'
+inputs:
+  project-name:
+    description: 'Name of the GCP Project'
+    required: true
+  project-id:
+    description: 'ID of the GCP Project'
+    required: true
+  org-id:
+    description: 'The ID of the Google Cloud Organization'
+    required: true
+
+outputs:
+  project-id:
+    description: 'ID of the newly created GCP Project'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
