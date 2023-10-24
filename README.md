@@ -25,7 +25,7 @@ This Github Action creates a Google Cloud Project in your Organisation.
 	
     - id: 'auth'
       name: 'Authenticate to Google Cloud'
-      uses: 'google-github-actions/auth@v1'
+      uses: 'google-github-actions/auth@v1-beta'
       with:
         credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}'
 
