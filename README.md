@@ -33,7 +33,7 @@ This Github Action creates a Google Cloud Project in your Organisation.
       uses: google-github-actions/setup-gcloud@v0.6.0
 
     - name: Create GCP Project
-      uses: syed-gcp/create-project@v1
+      uses: syed-gcp/create-project@v1-beta
       with:
         project-name: 'your-project-name'
         project-id: 'your-project-id'
